@@ -1,0 +1,5 @@
+# https://kakobuysspreadsheets.com/
+User-agent: *
+Allow: /
+
+Sitemap: https://kakobuysspreadsheets.com/sitemap.xml

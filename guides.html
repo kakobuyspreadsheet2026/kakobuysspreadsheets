@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon-kakobuy.svg" type="image/svg+xml" />
+        <link rel="icon" type="image/png" href="images/flame-icon.png" sizes="225x225" />
+    <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <title>
+      Kakobuy Spreadsheet → Kakobuy Checkout | Rehearsal, QC &amp; Shipping | kakobuy spreadsheet
+    </title>
+    <meta
+      name="description"
+      content="Kakobuy-only workflow: spreadsheet rows, wallet top-ups, rehearsal weight, warehouse QC beats seller photos, and outbound lines—written to complement (not duplicate) generic agent glossaries."
+    />
+    <link rel="canonical" href="https://kakobuysspreadsheets.com/guides.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kakobuysspreadsheets.com/guides.html" />
+    <meta
+      property="og:title"
+      content="Kakobuy Spreadsheet Users | From Row Paste to Rehearsal &amp; QC"
+    />
+    <meta
+      property="og:description"
+      content="Short Kakobuy playbook: paste links from the sheet, fund your wallet, trust warehouse QC, and confirm postage after rehearsal."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://kakobuysspreadsheets.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://kakobuysspreadsheets.com/guides.html"
+          }
+        ]
+      }
+    </script>
+    <link rel="alternate" hreflang="en" href="https://kakobuysspreadsheets.com/guides.html" />
+    <link rel="alternate" hreflang="pl" href="https://kakobuysspreadsheets.com/pl/guides.html" />
+    <link rel="alternate" hreflang="pt-PT" href="https://kakobuysspreadsheets.com/pt/guides.html" />
+    <link rel="alternate" hreflang="es" href="https://kakobuysspreadsheets.com/es/guides.html" />
+    <link rel="alternate" hreflang="de" href="https://kakobuysspreadsheets.com/de/guides.html" />
+    <link rel="alternate" hreflang="x-default" href="https://kakobuysspreadsheets.com/guides.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="kakobuy spreadsheet home">
+          <img
+            class="brand-logo" src="images/kakobuy-wordmark.png" width="152" height="32" alt="Kakobuy"
+            decoding="async"
+          />
+          <span class="brand-text"><span class="brand-lockup-suffix">spreadsheet</span></span>
+        </a>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li class="has-sub">
+              <button type="button" aria-expanded="false" aria-haspopup="true">
+                All Categories
+              </button>
+              <div class="submenu" role="menu">
+                <a href="https://maisonlooks.com/en/c/shoes" role="menuitem">Shoes</a>
+                <a href="https://maisonlooks.com/en/c/jackets" role="menuitem">Jackets</a>
+                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Hoodies / Sweaters</a>
+                <a href="https://maisonlooks.com/en/c/t-shirts" role="menuitem">T-Shirts</a>
+                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Pants / Shorts</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Bags</a>
+                <a href="https://maisonlooks.com/en/c/headwear" role="menuitem">Headwear</a>
+                <a href="https://maisonlooks.com/en/c/accessories" role="menuitem">Accessories</a>
+                <a href="https://maisonlooks.com/en/c/electronics" role="menuitem">Electronics</a>
+                <a href="https://maisonlooks.com/en/c/perfume" role="menuitem">Perfume</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Jersey</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Other</a>
+              </div>
+            </li>
+            <li><a href="guides.html" aria-current="page">Guides</a></li>
+            <li><a href="spreadsheet.html">Spreadsheet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </nav>
+        <div class="header-end">
+        <div class="header-cta">
+          <a
+            class="btn btn-primary"
+            href="https://maisonlooks.com/?utm_source=kakobuysspreadsheets"
+            >kakobuy spreadsheet</a
+          >
+        </div>
+        <nav class="language-switcher has-lang" aria-label="Language selector">
+          <button type="button" class="lang-globe-btn" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">
+            <svg class="lang-globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </button>
+          <div class="lang-menu" role="menu">
+            <a href="guides.html" aria-current="page">EN</a>
+            <a href="pl/guides.html" lang="pl">PL</a>
+            <a href="pt/guides.html" lang="pt-PT">PT</a>
+            <a href="es/guides.html" lang="es">ES</a>
+            <a href="de/guides.html" lang="de">DE</a>
+          </div>
+        </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="guides-page" id="main">
+      <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Guides</span>
+      </nav>
+      <header class="guides-hero">
+        <h1>Kakobuy spreadsheet → Kakobuy checkout</h1>
+        <p class="guides-lead">
+          This is a <strong>short Kakobuy playbook</strong> for people who discover products in
+          our spreadsheet, then finish everything inside Kakobuy. It focuses on the
+          handoff—paste, wallet, rehearsal, warehouse QC, outbound lines—not a generic
+          encyclopedia of every policy. Numbers and windows change; always verify in
+          <strong>Kakobuy</strong> and their help center.
+        </p>
+      </header>
+
+      <article class="guides-master">
+        <h2>Eight stops from row to parcel</h2>
+        <p>
+          Unlike a long topic-by-topic manual, these sections follow the order most
+          <strong>kakobuy spreadsheet</strong> buyers actually hit: get the link in, fund the
+          order, understand why postage shifts after packing, approve real QC, then ship.
+        </p>
+
+        <nav class="guides-toc" aria-label="Guide sections">
+          <strong>On this page</strong>
+          <ol>
+            <li><a href="#g1">From spreadsheet row to Kakobuy order</a></li>
+            <li><a href="#g2">Wallet top-ups and when your balance moves</a></li>
+            <li><a href="#g3">Rehearsal, volumetric weight, and surprise postage</a></li>
+            <li><a href="#g4">Warehouse QC beats seller photos in the sheet</a></li>
+            <li><a href="#g5">Storage, combining items, choosing a line</a></li>
+            <li><a href="#g6">Tracking silence, customs, and insurance</a></li>
+            <li><a href="#g7">Refunds, tickets, and what we cannot touch</a></li>
+            <li><a href="#g8">Restricted goods: ask Kakobuy before you ship</a></li>
+          </ol>
+        </nav>
+
+        <section class="guide-section" id="g1">
+          <h3>
+            <span class="guide-num" aria-hidden="true">1</span>
+            From spreadsheet row to Kakobuy order
+          </h3>
+          <p>
+            A <strong>kakobuy spreadsheet</strong> row is only a curated hint: title, price
+            context, maybe a QC thumbnail. The buy path starts when you copy the product
+            URL into Kakobuy’s item field and submit—Kakobuy negotiates the domestic leg,
+            not this website.
+          </p>
+          <ul>
+            <li>Fix truncated links before you pay; broken rows should be skipped or replaced in-hub.</li>
+            <li>If two rows look like the same batch, compare notes, then pick one link—don’t double-order by accident.</li>
+            <li>Domestic shipping to Kakobuy’s warehouse is part of their flow, not something this marketing site tracks.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g2">
+          <h3>
+            <span class="guide-num" aria-hidden="true">2</span>
+            Wallet top-ups and when your balance moves
+          </h3>
+          <p>
+            Kakobuy runs on a prepaid-style wallet for most purchases. Top up before you
+            chase limited stock, and keep a buffer for domestic freight surprises.
+          </p>
+          <ul>
+            <li>Use whichever funding methods Kakobuy lists for your region—cards, wallets, etc.</li>
+            <li>Refunds and withdrawals go through Kakobuy’s own forms, never through this domain.</li>
+            <li>Failed payments usually mean limits, bank checks, or verification—retry inside Kakobuy, not here.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g3">
+          <h3>
+            <span class="guide-num" aria-hidden="true">3</span>
+            Rehearsal, volumetric weight, and surprise postage
+          </h3>
+          <p>
+            Spreadsheet cells may show a <em>guess</em> at international postage. Kakobuy’s
+            <strong>rehearsal</strong> step repacks your items, measures real weight, and often
+            applies volumetric rules—final cost can jump or drop versus the estimate.
+          </p>
+          <ul>
+            <li>Run rehearsal when boxes are bulky or you combine multiple pieces.</li>
+            <li>Overpaid estimates usually return to wallet credit; underpaid means you top up again.</li>
+            <li>Read Kakobuy’s line-specific notes—some carriers price by volume, not scale weight alone.</li>
+          </ul>
+          <p class="guides-tip">
+            Tip: treat any number in the sheet as planning only; treat Kakobuy’s rehearsal
+            screen as authoritative before you click “pay shipping.”
+          </p>
+        </section>
+
+        <section class="guide-section" id="g4">
+          <h3>
+            <span class="guide-num" aria-hidden="true">4</span>
+            Warehouse QC beats seller photos in the sheet
+          </h3>
+          <p>
+            Rows may include seller QC or community screenshots. Kakobuy’s
+            <strong>warehouse QC set</strong> is what you approve or reject before international
+            postage—lighting, angles, and defects should be judged there.
+          </p>
+          <ul>
+            <li>Reject or request exchange while Kakobuy still holds the goods.</li>
+            <li>After you green-light outbound shipping, remedies narrow—be slow and picky upstream.</li>
+            <li>For deeper QC reading, see our <a href="kakobuy-spreadsheet-qc.html">QC guide</a>.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g5">
+          <h3>
+            <span class="guide-num" aria-hidden="true">5</span>
+            Storage, combining items, choosing a line
+          </h3>
+          <p>
+            Free storage is time-boxed—check Kakobuy’s current clock. Combine parcels only
+            after each piece passes QC so you are not shipping a dud to save a few dollars.
+          </p>
+          <ul>
+            <li>Pick shipping lines for your risk tolerance: budget lines vs branded carriers vs insured options.</li>
+            <li>Declare values truthfully if Kakobuy asks—guessing wrong can create customs pain later.</li>
+            <li>Need weight nuance only? Read <a href="kakobuy-spreadsheet-shipping-weight.html">shipping weight &amp; estimates</a>.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g6">
+          <h3>
+            <span class="guide-num" aria-hidden="true">6</span>
+            Tracking silence, customs, and insurance
+          </h3>
+          <p>
+            International scans pause all the time—hubs, handoffs, or customs review. That
+            does not automatically mean a lost parcel; it means patience plus a Kakobuy
+            ticket if you blow past the line’s stated window.
+          </p>
+          <ul>
+            <li>Optional insurance is worth it when the haul is heavy or high value—read exclusions.</li>
+            <li>Customs may inspect without updating public tracking; your local rules decide duties.</li>
+            <li>Damage claims need photo proof the moment the box arrives—Kakobuy sets the clock.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g7">
+          <h3>
+            <span class="guide-num" aria-hidden="true">7</span>
+            Refunds, tickets, and what we cannot touch
+          </h3>
+          <p>
+            Our team curates spreadsheet rows and education. We do <strong>not</strong> access your
+            Kakobuy wallet, cannot force refunds, and cannot speed up warehouse tickets.
+          </p>
+          <ul>
+            <li>Discord is for community Q&amp;A; sensitive account issues belong to Kakobuy support.</li>
+            <li>Stale links? See <a href="kakobuy-spreadsheet-dead-links.html">dead links</a> before you blame the agent.</li>
+            <li>Promotions, coupons, referrals—only Kakobuy decides eligibility.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g8">
+          <h3>
+            <span class="guide-num" aria-hidden="true">8</span>
+            Restricted goods: ask Kakobuy before you ship
+          </h3>
+          <p>
+            Batteries, liquids, magnets, replicas with IP risk—many categories look fine in
+            a marketplace screenshot but fail export or import rules. If a row looks edgy,
+            pause and ask Kakobuy support <em>before</em> you pay international postage.
+          </p>
+          <ul>
+            <li>Cross-check Kakobuy’s prohibited list and your country’s import law.</li>
+            <li>Some carriers reject categories others allow—line choice matters as much as the item.</li>
+            <li>When in doubt, skip the buy; spreadsheets refresh faster than customs disputes.</li>
+          </ul>
+        </section>
+
+        <p class="guides-footer-note">
+          This short guide exists so <strong>kakobuy spreadsheet</strong> users know what happens
+          after they copy a link—everything chargeable still happens between you and
+          Kakobuy. For exhaustive policy tables, rely on <strong>Kakobuy’s official help center</strong>
+          and live account screens; we keep this page narrative, not encyclopedic.
+        </p>
+
+        <div class="guides-cta">
+          <a
+            class="btn btn-primary"
+            href="https://maisonlooks.com/?utm_source=kakobuysspreadsheets"
+            >Browse our spreadsheet hub</a
+          >
+          <a class="btn btn-ghost" href="/">Back to home</a>
+        </div>
+        <section class="related-links-block" aria-labelledby="guides-related">
+          <h2 id="guides-related">Related Kakobuy spreadsheet resources</h2>
+          <div class="related-links-grid">
+            <a class="related-link-card" href="news.html">
+              <strong>News & updates</strong>
+              <span>Read fresh notes about QC habits, stale links, and hub changes.</span>
+            </a>
+            <a class="related-link-card" href="contact.html">
+              <strong>Community</strong>
+              <span>Join Discord for buyer chat, QC discussion, and spreadsheet feedback.</span>
+            </a>
+            <a class="related-link-card" href="spreadsheet.html">
+              <strong>Open the hub</strong>
+              <span>Jump into the live Kakobuy spreadsheet hub on MaisonLooks.</span>
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="y"></span> kakobuy spreadsheet — Kakobuy platform merchants.
+        </p>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

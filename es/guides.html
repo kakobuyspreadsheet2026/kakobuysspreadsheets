@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../images/favicon-kakobuy.svg" type="image/svg+xml" />
+        <link rel="icon" type="image/png" href="../images/flame-icon.png" sizes="225x225" />
+    <link rel="icon" type="image/png" href="../images/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../images/favicon-16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    <title>
+      Kakobuy spreadsheet → pago en Kakobuy | Guía corta | kakobuy spreadsheet
+    </title>
+    <meta
+      name="description"
+      content="Flujo solo Kakobuy: filas de la hoja, saldo, rehearsal, QC de almacén y líneas de envío—guía breve."
+    />
+    <link rel="canonical" href="https://kakobuysspreadsheets.com/es/guides.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kakobuysspreadsheets.com/es/guides.html" />
+    <meta
+      property="og:title"
+      content="Guía Kakobuy | De la fila al rehearsal y QC"
+    />
+    <meta
+      property="og:description"
+      content="Pegar enlaces, recargar, confiar en el QC del almacén y confirmar el envío tras el rehearsal."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://kakobuysspreadsheets.com/es/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guías",
+            "item": "https://kakobuysspreadsheets.com/es/guides.html"
+          }
+        ]
+      }
+    </script>
+    <link rel="alternate" hreflang="en" href="https://kakobuysspreadsheets.com/guides.html" />
+    <link rel="alternate" hreflang="pl" href="https://kakobuysspreadsheets.com/pl/guides.html" />
+    <link rel="alternate" hreflang="pt-PT" href="https://kakobuysspreadsheets.com/pt/guides.html" />
+    <link rel="alternate" hreflang="es" href="https://kakobuysspreadsheets.com/es/guides.html" />
+    <link rel="alternate" hreflang="de" href="https://kakobuysspreadsheets.com/de/guides.html" />
+    <link rel="alternate" hreflang="x-default" href="https://kakobuysspreadsheets.com/guides.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/es/" aria-label="kakobuy spreadsheet inicio">
+          <img
+            class="brand-logo" src="../images/kakobuy-wordmark.png" width="152" height="32" alt="Kakobuy"
+            decoding="async"
+          />
+          <span class="brand-text"><span class="brand-lockup-suffix">spreadsheet</span></span>
+        </a>
+        <nav aria-label="Principal">
+          <ul>
+            <li><a href="/es/">Inicio</a></li>
+            <li class="has-sub">
+              <button type="button" aria-expanded="false" aria-haspopup="true">
+                Todas las categorías
+              </button>
+              <div class="submenu" role="menu">
+                <a href="https://maisonlooks.com/en/c/shoes" role="menuitem">Zapatillas</a>
+                <a href="https://maisonlooks.com/en/c/jackets" role="menuitem">Chaquetas</a>
+                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Sudaderas / jerseys</a>
+                <a href="https://maisonlooks.com/en/c/t-shirts" role="menuitem">Camisetas</a>
+                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Pantalones / shorts</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Bolsos</a>
+                <a href="https://maisonlooks.com/en/c/headwear" role="menuitem">Gorros</a>
+                <a href="https://maisonlooks.com/en/c/accessories" role="menuitem">Accesorios</a>
+                <a href="https://maisonlooks.com/en/c/electronics" role="menuitem">Electrónica</a>
+                <a href="https://maisonlooks.com/en/c/perfume" role="menuitem">Perfumes</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Jersey</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Otros</a>
+              </div>
+            </li>
+            <li><a href="guides.html" aria-current="page">Guías</a></li>
+            <li><a href="spreadsheet.html">Spreadsheet</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="news.html">Noticias</a></li>
+          </ul>
+        </nav>
+        <div class="header-end">
+        <div class="header-cta">
+          <a
+            class="btn btn-primary"
+            href="https://maisonlooks.com/?utm_source=kakobuysspreadsheets"
+            >kakobuy spreadsheet</a
+          >
+        </div>
+        <nav class="lang-switcher has-lang" aria-label="Idioma">
+          <button type="button" class="lang-globe-btn" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">
+            <svg class="lang-globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </button>
+          <div class="lang-menu" role="menu">
+            <a href="../guides.html">EN</a>
+            <a href="../pl/guides.html" lang="pl">PL</a>
+            <a href="../pt/guides.html" lang="pt-PT">PT</a>
+            <a href="guides.html" aria-current="page">ES</a>
+            <a href="../de/guides.html" lang="de">DE</a>
+          </div>
+        </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="guides-page" id="main">
+      <nav class="page-breadcrumbs" aria-label="Migas de pan">
+        <a href="/es/">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <span>Guías</span>
+      </nav>
+      <header class="guides-hero">
+        <h1>Kakobuy spreadsheet → checkout en Kakobuy</h1>
+        <p class="guides-lead">
+          Esta es una <strong>guía corta para Kakobuy</strong> si descubres productos en nuestra hoja y cierras todo en Kakobuy. Trata el traspaso—pegar, saldo, rehearsal, QC de almacén, líneas—no una enciclopedia de políticas. Cifras y plazos cambian; verifica siempre en <strong>Kakobuy</strong> y su centro de ayuda.
+        </p>
+      </header>
+
+      <article class="guides-master">
+        <h2>Ocho pasos de la fila al paquete</h2>
+        <p>
+          A diferencia de un manual largo tema a tema, estas secciones siguen el orden que suelen recorrer los compradores de <strong>kakobuy spreadsheet</strong>: meter el enlace, pagar el pedido, entender por qué cambia el porte tras el embalaje, aprobar el QC real y enviar.
+        </p>
+
+        <nav class="guides-toc" aria-label="Guide sections">
+          <strong>En esta página</strong>
+          <ol>
+            <li><a href="#g1">De la fila del spreadsheet al pedido en Kakobuy</a></li>
+            <li><a href="#g2">Recargas y cuándo se mueve tu saldo</a></li>
+            <li><a href="#g3">Rehearsal, peso volumétrico y portes sorpresa</a></li>
+            <li><a href="#g4">El QC del almacén gana a las fotos del vendedor</a></li>
+            <li><a href="#g5">Almacenamiento, consolidar y elegir línea</a></li>
+            <li><a href="#g6">Tracking en silencio, aduanas y seguro</a></li>
+            <li><a href="#g7">Reembolsos, tickets y lo que no podemos tocar</a></li>
+            <li><a href="#g8">Productos restringidos: pregunta en Kakobuy antes de enviar</a></li>
+          </ol>
+        </nav>
+
+        <section class="guide-section" id="g1">
+          <h3>
+            <span class="guide-num" aria-hidden="true">1</span>
+            De la fila del spreadsheet al pedido en Kakobuy
+          </h3>
+          <p>
+            Una fila de <strong>kakobuy spreadsheet</strong> solo es una pista: título, contexto de precio, quizá una miniatura de QC. La compra empieza cuando copias la URL del producto en el formulario de artículo de Kakobuy y envías—Kakobuy gestiona el tramo doméstico, no este sitio.
+          </p>
+          <ul>
+            <li>Arregla enlaces truncados antes de pagar; las filas rotas se omiten o se sustituyen en el hub.</li>
+            <li>Si dos filas parecen el mismo lote, compara notas y elige un enlace—no dupliques pedidos por error.</li>
+            <li>El envío doméstico al almacén de Kakobuy forma parte de su flujo; este sitio de marketing no lo rastrea.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g2">
+          <h3>
+            <span class="guide-num" aria-hidden="true">2</span>
+            Recargas y cuándo se mueve tu saldo
+          </h3>
+          <p>
+            Kakobuy usa un monedero prepago en la mayoría de compras. Recarga antes de perseguir stock limitado y deja margen para sorpresas en el flete doméstico.
+          </p>
+          <ul>
+            <li>Usa los métodos de pago que Kakobuy liste en tu región.</li>
+            <li>Reembolsos y retiros pasan por los formularios de Kakobuy, nunca por este dominio.</li>
+            <li>Pagos fallidos suelen ser límites, comprobaciones bancarias o verificación—reintenta dentro de Kakobuy.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g3">
+          <h3>
+            <span class="guide-num" aria-hidden="true">3</span>
+            Rehearsal, peso volumétrico y portes sorpresa
+          </h3>
+          <p>
+            Las celdas pueden mostrar una <em>estimación</em> del envío internacional. El paso de <strong>rehearsal</strong> de Kakobuy reembala, pesa y aplica reglas volumétricas—el coste final puede subir o bajar respecto a la estimación.
+          </p>
+          <ul>
+            <li>Haz rehearsal si las cajas son voluminosas o combinas varias piezas.</li>
+            <li>Si pagaste de más, suele volver al saldo; si falta, recarga otra vez.</li>
+            <li>Lee las notas de cada línea—algunos transportistas cobran por volumen, no solo por peso real.</li>
+          </ul>
+          <p class="guides-tip">
+            Trata cualquier cifra de la hoja como orientativa; la pantalla de rehearsal de Kakobuy manda antes de pagar el envío internacional.
+          </p>
+        </section>
+
+        <section class="guide-section" id="g4">
+          <h3>
+            <span class="guide-num" aria-hidden="true">4</span>
+            El QC del almacén gana a las fotos del vendedor
+          </h3>
+          <p>
+            Las filas pueden incluir QC del vendedor o capturas de la comunidad. El <strong>set de QC en almacén</strong> de Kakobuy es lo que apruebas o rechazas antes del porte internacional.
+          </p><p>
+            Para profundizar, consulta nuestra <a href='kakobuy-spreadsheet-qc.html'>guía de QC</a>.
+          </p>
+          <ul>
+            <li>Rechaza o pide cambio mientras Kakobuy aún tenga el artículo.</li>
+            <li>Tras aprobar el envío internacional, las opciones se reducen—sé exigente antes.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g5">
+          <h3>
+            <span class="guide-num" aria-hidden="true">5</span>
+            Almacenamiento, consolidar y elegir línea
+          </h3>
+          <p>
+            El almacenamiento gratuito tiene límite de tiempo—consulta el reloj actual de Kakobuy. Consolida solo cuando cada pieza haya pasado QC.
+          </p><p>
+            Sobre peso y estimaciones: <a href='kakobuy-spreadsheet-shipping-weight.html'>peso del envío y estimaciones</a>.
+          </p>
+          <ul>
+            <li>Elige líneas según tu tolerancia al riesgo: económicas, carriers conocidos o con seguro.</li>
+            <li>Declara valores con sinceridad si Kakobuy lo pide.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g6">
+          <h3>
+            <span class="guide-num" aria-hidden="true">6</span>
+            Tracking en silencio, aduanas y seguro
+          </h3>
+          <p>
+            Los escaneos internacionales se detienen a menudo—no significa pérdida; abre ticket en Kakobuy si superas la ventana indicada.
+          </p>
+          <ul>
+            <li>El seguro opcional compensa en envíos pesados o caros—lee exclusiones.</li>
+            <li>Aduanas puede inspeccionar sin actualizar el tracking público.</li>
+            <li>Las reclamaciones por daños requieren fotos al recibir—Kakobuy marca el plazo.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g7">
+          <h3>
+            <span class="guide-num" aria-hidden="true">7</span>
+            Reembolsos, tickets y lo que no podemos tocar
+          </h3>
+          <p>
+            Curamos filas y educación. <strong>No</strong> accedemos a tu monedero de Kakobuy ni aceleramos tickets.
+          </p><p>
+            Enlaces rotos: <a href='kakobuy-spreadsheet-dead-links.html'>guía de enlaces caídos</a>.
+          </p>
+          <ul>
+            <li>Discord es para la comunidad; temas sensibles van al soporte de Kakobuy.</li>
+            <li>Promociones y cupones—solo decide Kakobuy.</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="g8">
+          <h3>
+            <span class="guide-num" aria-hidden="true">8</span>
+            Productos restringidos: pregunta en Kakobuy antes de enviar
+          </h3>
+          <p>
+            Baterías, líquidos, réplicas con riesgo IP pueden parecer bien en captura pero fallan en exportación o importación. Si la fila huele raro, pregunta a soporte <em>antes</em> de pagar el envío internacional.
+          </p>
+          <ul>
+            <li>Cruza la lista de prohibidos de Kakobuy y la ley de tu país.</li>
+            <li>Algunas líneas rechazan categorías que otras aceptan.</li>
+            <li>En caso de duda, no compres; las hojas se actualizan más rápido que un conflicto en aduanas.</li>
+          </ul>
+        </section>
+
+        <p class="guides-footer-note">
+          Esta guía breve sirve para que los usuarios de <strong>kakobuy spreadsheet</strong> sepan qué pasa tras copiar un enlace—todo lo cobrable sigue entre tú y Kakobuy. Para tablas exhaustivas de políticas, usa el <strong>centro de ayuda oficial de Kakobuy</strong> y las pantallas de tu cuenta; esta página es narrativa, no enciclopedia.
+        </p>
+
+        <div class="guides-cta">
+          <a
+            class="btn btn-primary"
+            href="https://maisonlooks.com/?utm_source=kakobuysspreadsheets"
+            >Abrir el hub de la hoja</a
+          >
+          <a class="btn btn-ghost" href="/es/">Volver al inicio</a>
+        </div>
+        <section class="related-links-block" aria-labelledby="guides-related">
+          <h2 id="guides-related">Más recursos kakobuy spreadsheet</h2>
+          <div class="related-links-grid">
+            <a class="related-link-card" href="news.html">
+              <strong>Noticias</strong>
+              <span>Novedades sobre QC y el hub.</span>
+            </a>
+            <a class="related-link-card" href="contact.html">
+              <strong>Comunidad</strong>
+              <span>Discord para dudas y feedback.</span>
+            </a>
+            <a class="related-link-card" href="spreadsheet.html">
+              <strong>Abrir hub</strong>
+              <span>Catálogo en vivo en MaisonLooks.</span>
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="y"></span> kakobuy spreadsheet — Comerciantes de la plataforma Kakobuy.
+        </p>
+        <div class="footer-links">
+          <a href="/es/">Inicio</a>
+          <a href="contact.html">Contacto</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
