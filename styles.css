@@ -1478,6 +1478,31 @@ section[aria-labelledby="faq-title"] {
   padding: 3.5rem 1.25rem;
 }
 
+/* One shared max-width column so title, intro cards, and category grid line up */
+#categories .categories-layout.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+#categories .categories-layout > .section-head {
+  max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+#categories .categories-layout > .category-intro-grid {
+  width: 100%;
+}
+
+#categories .categories-layout > .cat-grid {
+  width: 100%;
+}
+
 .section-head {
   max-width: var(--max);
   margin: 0 auto 2rem;
