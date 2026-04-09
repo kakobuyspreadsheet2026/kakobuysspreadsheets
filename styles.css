@@ -1,21 +1,25 @@
-/* kakobuy spreadsheet — amber nav + Kakobuy coral accents */
+/* kakobuy spreadsheet — orange nav (aligned with category icons) + Kakobuy coral */
 
 :root {
-  --bg: #fffbeb;
-  --bg-elevated: #fef3c7;
+  --bg: #fff7ed;
+  --bg-elevated: #ffedd5;
   --surface: #ffffff;
-  --border: rgba(120, 53, 15, 0.14);
+  --border: rgba(194, 65, 12, 0.14);
   --text: #1c1917;
   --muted: #57534e;
   --kakobuy-coral: #ff3b47;
-  --accent: #b45309;
-  --accent-hover: #92400e;
-  --link: #b45309;
-  --nav-bg: #fbbf24;
-  --nav-bg-deep: #f59e0b;
-  --nav-text: #1c1917;
-  --nav-link: #44403c;
-  --nav-link-hover: #78350f;
+  --accent: #c2410c;
+  --accent-hover: #9a3412;
+  --link: #c2410c;
+  /* Match category PNG orange (~orange-500/600) */
+  --nav-bg: #f97316;
+  --nav-bg-deep: #ea580c;
+  --nav-text: #ffffff;
+  --nav-link: rgba(255, 255, 255, 0.92);
+  --nav-link-hover: #ffffff;
+  --nav-ink: #1c1917;
+  --header-cta-bg: #1c1917;
+  --header-cta-hover: #431407;
   --discord: #5865f2;
   --discord-hover: #4752c4;
   --radius: 12px;
@@ -67,9 +71,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--nav-bg);
+  background: linear-gradient(180deg, #fb923c 0%, var(--nav-bg) 42%, var(--nav-bg-deep) 100%);
   border-bottom: 2px solid var(--nav-bg-deep);
-  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.18);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.28);
 }
 
 .header-inner {
@@ -130,9 +134,9 @@ a:hover {
   width: 2.5rem;
   height: 2.5rem;
   padding: 0;
-  border: 1px solid rgba(28, 25, 23, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
-  background: rgba(255, 251, 235, 0.85);
+  background: rgba(255, 255, 255, 0.2);
   color: var(--nav-text);
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s, color 0.15s;
@@ -140,8 +144,8 @@ a:hover {
 
 .lang-globe-btn:hover,
 .has-lang:focus-within .lang-globe-btn {
-  background: #fff7d6;
-  border-color: rgba(120, 53, 15, 0.3);
+  background: rgba(255, 255, 255, 0.32);
+  border-color: rgba(255, 255, 255, 0.55);
   color: var(--nav-link-hover);
 }
 
@@ -158,11 +162,11 @@ a:hover {
   right: 0;
   margin-top: 0.35rem;
   min-width: 8.75rem;
-  background: #fffbeb;
-  border: 1px solid rgba(180, 83, 9, 0.25);
+  background: var(--bg);
+  border: 1px solid rgba(194, 65, 12, 0.22);
   border-radius: var(--radius);
   padding: 0.5rem 0;
-  box-shadow: 0 12px 28px rgba(120, 53, 15, 0.2);
+  box-shadow: 0 12px 28px rgba(124, 45, 18, 0.18);
   z-index: 60;
 }
 
@@ -180,7 +184,7 @@ a:hover {
   border: none;
   border-radius: 0;
   background: transparent;
-  color: var(--nav-text);
+  color: var(--nav-ink);
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.3;
@@ -190,15 +194,15 @@ a:hover {
 .language-switcher.has-lang .lang-menu a:hover,
 .lang-switcher.has-lang .lang-menu a:hover,
 .lang-switch.has-lang .lang-menu a:hover {
-  background: #fde68a;
-  color: var(--nav-link-hover);
+  background: var(--bg-elevated);
+  color: var(--accent);
 }
 
 .language-switcher.has-lang .lang-menu a[aria-current="page"],
 .lang-switcher.has-lang .lang-menu a[aria-current="page"],
 .lang-switch.has-lang .lang-menu a[aria-current="page"] {
-  background: var(--nav-text);
-  color: #fffbeb;
+  background: var(--accent);
+  color: #ffffff;
 }
 
 .language-switcher.has-lang .lang-menu a[aria-current="page"]:hover,
@@ -261,8 +265,9 @@ a:hover {
 
 .brand-lockup-suffix {
   font-weight: 800;
-  color: var(--nav-link-hover);
+  color: var(--nav-link);
   letter-spacing: -0.02em;
+  opacity: 0.95;
 }
 
 nav ul {
@@ -318,11 +323,11 @@ nav a[aria-current="page"] {
   left: 0;
   margin-top: 0.35rem;
   min-width: 220px;
-  background: #fffbeb;
-  border: 1px solid rgba(180, 83, 9, 0.25);
+  background: var(--bg);
+  border: 1px solid rgba(194, 65, 12, 0.22);
   border-radius: var(--radius);
   padding: 0.5rem 0;
-  box-shadow: 0 12px 28px rgba(120, 53, 15, 0.2);
+  box-shadow: 0 12px 28px rgba(124, 45, 18, 0.18);
 }
 
 .has-sub:hover .submenu,
@@ -333,15 +338,15 @@ nav a[aria-current="page"] {
 .submenu a {
   display: block;
   padding: 0.45rem 1rem;
-  color: var(--nav-text);
+  color: var(--nav-ink);
   font-size: 0.875rem;
   font-weight: 500;
 }
 
 .submenu a:hover {
-  background: #fde68a;
+  background: var(--bg-elevated);
   text-decoration: none;
-  color: var(--nav-link-hover);
+  color: var(--accent);
 }
 
 .btn {
@@ -361,12 +366,12 @@ nav a[aria-current="page"] {
 }
 
 .btn-primary {
-  background: var(--nav-text);
-  color: #fffbeb;
+  background: var(--header-cta-bg);
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
+  background: var(--header-cta-hover);
   text-decoration: none;
   color: #fff;
 }
@@ -383,8 +388,8 @@ nav a[aria-current="page"] {
 }
 
 .btn-ghost:hover {
-  border-color: var(--nav-link-hover);
-  color: var(--nav-link-hover);
+  border-color: rgba(194, 65, 12, 0.35);
+  color: var(--accent);
   background: #fff;
   text-decoration: none;
 }
@@ -433,12 +438,12 @@ nav a[aria-current="page"] {
   padding: 2rem 1rem 2.25rem;
   background: radial-gradient(
       ellipse 80% 90% at 50% 0%,
-      rgba(251, 191, 36, 0.45),
+      rgba(249, 115, 22, 0.38),
       transparent 55%
     ),
-    #fffbeb;
+    var(--bg);
   border-radius: 20px;
-  border: 1px solid rgba(180, 83, 9, 0.2);
+  border: 1px solid rgba(194, 65, 12, 0.2);
 }
 
 .contact-hero h1 {
@@ -486,7 +491,7 @@ nav a[aria-current="page"] {
 a.contact-card:hover {
   text-decoration: none;
   transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(120, 53, 15, 0.15);
+  box-shadow: 0 16px 40px rgba(124, 45, 18, 0.15);
 }
 
 .contact-card--discord:hover {
@@ -608,7 +613,7 @@ a.contact-card:hover {
   margin: 0 auto 1.25rem;
   padding: 0.85rem 1.1rem;
   background: #fef9c3;
-  border: 1px solid rgba(180, 83, 9, 0.35);
+  border: 1px solid rgba(194, 65, 12, 0.35);
   border-radius: var(--radius);
   font-size: 0.9375rem;
   color: var(--text);
@@ -708,8 +713,8 @@ a.contact-card:hover {
   min-width: 1.65rem;
   height: 1.65rem;
   border-radius: 6px;
-  background: rgba(251, 191, 36, 0.55);
-  color: var(--nav-link-hover);
+  background: rgba(249, 115, 22, 0.18);
+  color: var(--accent);
   font-size: 0.75rem;
   font-weight: 800;
 }
@@ -796,9 +801,9 @@ a.contact-card:hover {
 
 .related-link-card:hover {
   text-decoration: none;
-  border-color: rgba(180, 83, 9, 0.35);
+  border-color: rgba(194, 65, 12, 0.35);
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(120, 53, 15, 0.08);
+  box-shadow: 0 10px 24px rgba(124, 45, 18, 0.08);
 }
 
 .related-link-card strong {
@@ -899,6 +904,23 @@ a.contact-card:hover {
   font-weight: 700;
 }
 
+.news-item p + p {
+  margin-top: 0.65rem;
+}
+
+.news-item-figure {
+  margin: 0 0 1rem;
+}
+
+.news-item-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
 .article-page {
   max-width: 48rem;
   margin: 0 auto;
@@ -983,7 +1005,7 @@ a.contact-card:hover {
   padding: 3rem 1.25rem 4rem;
   background: radial-gradient(
       ellipse 85% 65% at 50% -25%,
-      rgba(251, 191, 36, 0.35),
+      rgba(249, 115, 22, 0.26),
       transparent 60%
     ),
     var(--bg);
@@ -993,7 +1015,7 @@ a.contact-card:hover {
   padding-top: 3.25rem;
   padding-bottom: 3.5rem;
   background: #ffffff;
-  border-bottom: 1px solid rgba(180, 83, 9, 0.12);
+  border-bottom: 1px solid rgba(194, 65, 12, 0.12);
 }
 
 .hero-inner {
@@ -1067,40 +1089,40 @@ a.contact-card:hover {
   align-items: center;
   padding: 0.42rem 0.8rem;
   border-radius: 999px;
-  background: #fff8dc;
-  border: 1px solid rgba(180, 83, 9, 0.14);
+  background: #ffedd5;
+  border: 1px solid rgba(194, 65, 12, 0.14);
   color: var(--muted);
   font-size: 0.86rem;
   font-weight: 600;
 }
 
 .btn-hero-primary {
-  background: linear-gradient(180deg, #fde047 0%, #fbbf24 100%);
-  color: var(--nav-text);
-  border-color: rgba(180, 83, 9, 0.35);
-  box-shadow: 0 2px 10px rgba(180, 83, 9, 0.15);
+  background: linear-gradient(180deg, #fb923c 0%, var(--nav-bg) 48%, var(--nav-bg-deep) 100%);
+  color: #ffffff;
+  border-color: rgba(124, 45, 18, 0.35);
+  box-shadow: 0 2px 10px rgba(234, 88, 12, 0.22);
   font-weight: 700;
 }
 
 .btn-hero-primary:hover {
   text-decoration: none;
-  filter: brightness(1.05);
-  color: var(--nav-link-hover);
-  border-color: rgba(120, 53, 15, 0.45);
+  filter: brightness(1.06);
+  color: #ffffff;
+  border-color: rgba(124, 45, 18, 0.45);
 }
 
 .btn-hero-secondary {
   background: #ffffff;
-  color: var(--nav-text);
+  color: var(--nav-ink);
   border-color: rgba(28, 25, 23, 0.22);
   font-weight: 600;
 }
 
 .btn-hero-secondary:hover {
   text-decoration: none;
-  border-color: var(--nav-link-hover);
-  color: var(--nav-link-hover);
-  background: #fffbeb;
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--bg);
 }
 
 .hero-eyebrow {
@@ -1160,9 +1182,9 @@ a.contact-card:hover {
 
 .quick-answer-band {
   padding: 2.5rem 1.25rem 2.25rem;
-  background: linear-gradient(180deg, #fffef8 0%, #fffbeb 100%);
-  border-top: 1px solid rgba(180, 83, 9, 0.08);
-  border-bottom: 1px solid rgba(180, 83, 9, 0.12);
+  background: linear-gradient(180deg, #fffdfb 0%, var(--bg) 100%);
+  border-top: 1px solid rgba(194, 65, 12, 0.08);
+  border-bottom: 1px solid rgba(194, 65, 12, 0.12);
 }
 
 .quick-answer-grid {
@@ -1200,7 +1222,7 @@ a.contact-card:hover {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.1rem 1rem;
-  box-shadow: 0 8px 24px rgba(120, 53, 15, 0.06);
+  box-shadow: 0 8px 24px rgba(124, 45, 18, 0.06);
 }
 
 .quick-answer-card h3 {
@@ -1247,8 +1269,8 @@ a.contact-card:hover {
 }
 
 .category-intro-card {
-  background: #fffef8;
-  border: 1px solid rgba(180, 83, 9, 0.12);
+  background: #fffdfb;
+  border: 1px solid rgba(194, 65, 12, 0.12);
   border-radius: 14px;
   padding: 1rem 1rem 1.05rem;
 }
@@ -1269,8 +1291,8 @@ a.contact-card:hover {
 
 .category-summary-card {
   margin-top: 1.35rem;
-  background: linear-gradient(180deg, #fffef7 0%, #fff8db 100%);
-  border: 1px solid rgba(180, 83, 9, 0.15);
+  background: linear-gradient(180deg, #fffdfb 0%, #ffedd5 100%);
+  border: 1px solid rgba(194, 65, 12, 0.15);
   border-radius: 14px;
   padding: 1.15rem 1.1rem;
 }
@@ -1309,19 +1331,19 @@ a.contact-card:hover {
   align-items: center;
   font-weight: 700;
   font-size: 1.02rem;
-  color: var(--nav-text);
-  background: linear-gradient(180deg, #fde047 0%, #fbbf24 100%);
+  color: #ffffff;
+  background: linear-gradient(180deg, #fb923c 0%, var(--nav-bg) 50%, var(--nav-bg-deep) 100%);
   padding: 0.55rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid rgba(180, 83, 9, 0.35);
+  border: 1px solid rgba(194, 65, 12, 0.35);
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.12);
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.18);
 }
 
 .link-cta-search:hover {
   text-decoration: none;
-  filter: brightness(1.04);
-  color: var(--nav-link-hover);
+  filter: brightness(1.05);
+  color: #ffffff;
 }
 
 .steps-bridge {
@@ -1341,7 +1363,7 @@ a.contact-card:hover {
 
 .step-row {
   padding: 1.25rem 0;
-  border-bottom: 1px solid rgba(180, 83, 9, 0.12);
+  border-bottom: 1px solid rgba(194, 65, 12, 0.12);
 }
 
 .step-row:last-child {
@@ -1375,9 +1397,9 @@ a.contact-card:hover {
 .lit-agent-note {
   margin: 0.75rem 0 0;
   padding: 1.1rem 1.2rem;
-  background: #fffef8;
+  background: #fffdfb;
   border-radius: 12px;
-  border: 1px solid rgba(180, 83, 9, 0.18);
+  border: 1px solid rgba(194, 65, 12, 0.18);
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--muted);
@@ -1485,10 +1507,21 @@ section[aria-labelledby="faq-title"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-grid > li {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
 }
 
 .cat-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1499,6 +1532,32 @@ section[aria-labelledby="faq-title"] {
   font-size: 0.9375rem;
   text-decoration: none;
   transition: border-color 0.15s, transform 0.15s;
+}
+
+/* Category icons: white tile on cream page */
+.cat-card-icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-bottom: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(28, 25, 23, 0.06);
+}
+
+.cat-card-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  display: block;
+}
+
+.cat-card:hover .cat-card-icon-wrap,
+.cat-card:focus-visible .cat-card-icon-wrap {
+  border-color: rgba(194, 65, 12, 0.22);
+  box-shadow: 0 2px 8px rgba(28, 25, 23, 0.08);
 }
 
 .cat-card:hover {
@@ -1517,17 +1576,17 @@ section[aria-labelledby="faq-title"] {
 
 /* Light bands: About / Why choose / How to */
 .section-lit-light {
-  background: #fffef5 !important;
+  background: linear-gradient(180deg, #fffdfb 0%, #fff7ed 100%) !important;
   color: #1c1917;
   padding: 3rem 1.25rem 3.5rem;
 }
 
 .section-lit-light.has-top-accent {
-  border-top: 4px solid #f59e0b;
+  border-top: 4px solid var(--nav-bg);
 }
 
 .section-lit-light + .section-lit-light {
-  border-top: 1px solid rgba(180, 83, 9, 0.18);
+  border-top: 1px solid rgba(194, 65, 12, 0.18);
   padding-top: 3rem;
 }
 
@@ -1626,8 +1685,8 @@ section[aria-labelledby="faq-title"] {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #f4d03f;
-  color: #1a1408;
+  background: linear-gradient(180deg, #fb923c, var(--nav-bg));
+  color: #ffffff;
   font-size: 0.8rem;
   font-weight: 800;
   display: grid;
@@ -1679,12 +1738,8 @@ section[aria-labelledby="faq-title"] {
 .cta-block {
   text-align: center;
   padding: 3rem 1.25rem 4rem;
-  background: linear-gradient(
-    180deg,
-    #fde68a 0%,
-    #fffbeb 100%
-  );
-  border-top: 1px solid rgba(180, 83, 9, 0.2);
+  background: linear-gradient(180deg, #ffedd5 0%, var(--bg) 100%);
+  border-top: 1px solid rgba(194, 65, 12, 0.2);
 }
 
 .cta-block h2 {
@@ -1705,11 +1760,11 @@ section[aria-labelledby="faq-title"] {
   padding: 3rem 1.25rem 3.5rem;
   background: radial-gradient(
       ellipse 85% 60% at 50% -20%,
-      rgba(251, 191, 36, 0.3),
+      rgba(249, 115, 22, 0.22),
       transparent 58%
     ),
     var(--bg);
-  border-bottom: 1px solid rgba(180, 83, 9, 0.12);
+  border-bottom: 1px solid rgba(194, 65, 12, 0.12);
 }
 
 .home-hero-inner {
@@ -1815,8 +1870,8 @@ section[aria-labelledby="faq-title"] {
   min-width: 1.65rem;
   height: 1.65rem;
   border-radius: 8px;
-  background: rgba(251, 191, 36, 0.55);
-  color: var(--nav-link-hover);
+  background: rgba(249, 115, 22, 0.18);
+  color: var(--accent);
   font-size: 0.8rem;
   font-weight: 800;
 }
