@@ -912,6 +912,11 @@ a.contact-card:hover {
   margin: 0 0 1rem;
 }
 
+.news-item-figure picture {
+  display: block;
+  margin: 0;
+}
+
 .news-item-figure img {
   display: block;
   width: 100%;
@@ -1570,6 +1575,12 @@ section[aria-labelledby="faq-title"] {
   background: var(--surface);
   border: 1px solid var(--border);
   box-shadow: 0 1px 3px rgba(28, 25, 23, 0.06);
+}
+
+.cat-card-icon-wrap picture {
+  display: block;
+  width: 72px;
+  height: 72px;
 }
 
 .cat-card-icon {
