@@ -2008,3 +2008,186 @@ section[aria-labelledby="faq-title"] {
     width: 100%;
   }
 }
+
+/* Homepage: MaisonLooks hub AI helpers (discovery before Kakobuy paste) */
+.section-ai-hub {
+  background: linear-gradient(180deg, #fffdfb 0%, var(--bg) 100%);
+  color: var(--text);
+  padding: 3rem 1.25rem 3.5rem;
+  border-top: 4px solid var(--nav-bg);
+  border-bottom: 1px solid rgba(194, 65, 12, 0.12);
+}
+
+.section-ai-hub .container {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.section-head--ai-hub {
+  text-align: left;
+  margin-bottom: 2rem;
+  max-width: 48rem;
+}
+
+.section-kicker--ai {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+
+.section-ai-hub .section-head--ai-hub h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1c1917;
+  letter-spacing: -0.02em;
+}
+
+.ai-hub-intro {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.ai-hub-intro a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ai-hub-intro a:hover {
+  color: var(--accent-hover);
+}
+
+.ai-hub-intro strong {
+  color: var(--text);
+}
+
+.ai-hub-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ai-hub-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.35rem;
+  align-items: start;
+  padding: 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(124, 45, 18, 0.07);
+}
+
+@media (min-width: 880px) {
+  .ai-hub-card {
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+    gap: 1.75rem;
+    padding: 1.5rem 1.65rem;
+  }
+
+  .ai-hub-card--reverse .ai-hub-figure {
+    order: 2;
+  }
+
+  .ai-hub-card--reverse .ai-hub-body {
+    order: 1;
+  }
+}
+
+.ai-hub-figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #f5f5f4 0%, #e7e5e4 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.ai-hub-figure picture {
+  display: block;
+  margin: 0;
+}
+
+.ai-hub-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.ai-hub-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.ai-hub-lead {
+  margin: 0 0 0.85rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: #57534e;
+}
+
+.ai-hub-body ul {
+  margin: 0 0 1.1rem;
+  padding-left: 1.2rem;
+  color: #57534e;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.ai-hub-body ul li {
+  margin-bottom: 0.35rem;
+}
+
+.ai-hub-body a {
+  color: var(--link);
+}
+
+.ai-hub-body a:hover {
+  color: var(--accent-hover);
+}
+
+.btn-ai-hub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.35rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff !important;
+  text-decoration: none !important;
+  background: var(--header-cta-bg);
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(28, 25, 23, 0.18);
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.btn-ai-hub:hover {
+  background: var(--header-cta-hover);
+  transform: translateY(-1px);
+}
+
+.ai-hub-disclaimer {
+  margin: 2rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(194, 65, 12, 0.14);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 46rem;
+}
+
+.ai-hub-disclaimer strong {
+  color: #44403c;
+}
